@@ -13,9 +13,11 @@ Supomos que queiramos desenvolver um jogo de BINGO com as seguintes premissas.
 * As cartelas terão 5 colunas e 3 linhas.
 * Há 2 formas de premiação. Uma quando uma linha é completada e outra quando toda a cartela é preenchida. Ambos só podem ocorrer uma vez.
 * O numero de cartelas é limitado a 100 por rodada.
-* A distribuição dos numeros é feita através da fórmula ***f(n) = (10.n + k)*** onde **n** é o indice da coluna iniciando em 0 (zero), sendo que **n** faz parte do conjunto *[0, x]*, onde **x** é o número de colunas menos 1 (um) **k** representa o deslocamento aleatorio. **k** faz parte do conjunto *[0,m]* e *m* é o maior deslocamento possível para uma coluna.
+* A distribuição dos numeros é feita através da fórmula ***f(n) = (10.n + k)*** com ***(10.n + k) > 0*** onde **n** é o indice da coluna iniciando em 0 (zero), sendo que **n** faz parte do conjunto *[0, x]*, onde **x** é o número de colunas menos 1 (um), **k** representa o deslocamento aleatorio e faz parte do conjunto *[0,m]* e *m* é o maior deslocamento possível para uma coluna.
 
 Com base nas premissas acima responda os questionamentos abaixo.
+
+    NOTA: A intenção do teste nao é ter respostas certas, pois existem diferentes formas de se responder corretamente. Antes de efetuar qualquer pesquisa tente responder apenas com seus conhecimentos. Após terminar de responder, anote as dificuldades que enfrentou para responder e os conhecimentos que porventura tenha adquirido e coloque junto com suas respostas.
 
 1.) Qual o valor que você definiria para ***m***. Explique.
 
@@ -26,7 +28,6 @@ Com base nas premissas acima responda os questionamentos abaixo.
 4.) Imaginando criar todo o sistema do jogo, que inclui a geração das cartelas, o sorteio das bolinhas a verificação da cartela que primeiro preencheu uma linha e a primeira cartela a ser totalmente preenchida faça um planejamento da criação deste sistema. Indique que tecnologias seriam utilizadas (Banco de Dados, métodos, linguagens).
 
 5.) Que tipos de problemas você acredita que poderiam surgir na implementação desta solução?
-
 
 
 
