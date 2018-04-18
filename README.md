@@ -40,15 +40,15 @@ Com base nas premissas acima responda os questionamentos abaixo.
 5.) Que tipos de problemas você acredita que poderiam surgir na implementação desta solução?
 
 
-    DICAS:
-    - Para definir o deslocamento máximo aleatório devemos imaginar que cada coluna terá um grupo
+   DICAS:
+- Para definir o deslocamento máximo aleatório devemos imaginar que cada coluna terá um grupo
     de números a serem sorteados. Se tivessemos bolas de 1 a 90 e quisessemos divir aleatoriamente 
     mas de forma uniforme os numeros em 5 linha de 5 numeros com o centro vazio (total de 24 posições), 
     a primeira coluna teria numeros de **1** a **m**, a segunda de **2.m + 1** a **2.m + k** e assim por 
     diante até que a ultima coluna teria numeros de **m.n + 1** a **90**.
-    - **m** é definido usando a formula **m = x/n** onde **x** é a quantidade de bolinhas e **n** é o 
+- **m** é definido usando a formula **m = x/n** onde **x** é a quantidade de bolinhas e **n** é o 
     numero de colunas, portanto para o atual exemplo **m = 18**.
-    - A primeira coluna de uma cartela desse nosso BINGO terá numeros de **1** a **18**.
-    - A ultima coluna (quinta) terá os numeros **f(4) = (18.4) + k**.
-    - Para qualquer coluna do exemplo, o menor valor de **k** será **1** e o maior valor de **k** será igual a **m** (pois **k** pertence a **[1, m]**).   
+- A primeira coluna de uma cartela desse nosso BINGO terá numeros de **1** a **18**.
+- A ultima coluna (quinta) terá os numeros **f(4) = (18.4) + k**.
+- Para qualquer coluna do exemplo, o menor valor de **k** será **1** e o maior valor de **k** será igual a **m** (pois **k** pertence a **[1, m]**).   
 
