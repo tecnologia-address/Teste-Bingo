@@ -1,4 +1,4 @@
-Teste-Bingo
+# Teste-Bingo #
 Teste de conhecimento e capacidade logica para avaliação de candidatos a desenvolvedor
 
 Este é um teste de avaliação de capacidade de solução de problemas e conhecimento sobre algoritmos.
@@ -13,13 +13,23 @@ Supomos que queiramos desenvolver um jogo de BINGO com as seguintes premissas.
 * As cartelas terão 5 colunas e 3 linhas.
 * Há 2 formas de premiação. Uma quando uma linha é completada e outra quando toda a cartela é preenchida. Ambos só podem ocorrer uma vez.
 * O numero de cartelas é limitado a 100 por rodada.
-* A distribuição dos numeros é feita através da fórmula ***f(n) = (10.n + k)*** com ***(10.n + k) > 0*** onde **n** é o indice da coluna iniciando em 0 (zero), sendo que **n** faz parte do conjunto *[0, x]*, onde **x** é o número de colunas menos 1 (um), **k** representa o deslocamento aleatorio e faz parte do conjunto *[0,m]* e *m* é o maior deslocamento possível para uma coluna.
-
+* A distribuição dos numeros será feita através da fórmula  
+ - ***f(n) = (m.n + k)*** 
+ * Na formula **n** é o indice da coluna iniciando em 0 (zero).
+* **k** representa o deslocamento aleatorio para cada número da cartela e faz parte do conjunto ***[1, m]*** 
+* **m** é o maior deslocamento possível para uma coluna.
+ 
 Com base nas premissas acima responda os questionamentos abaixo.
 
-    NOTA: A intenção do teste nao é ter respostas certas, pois existem diferentes formas de se responder corretamente. Antes de efetuar qualquer pesquisa tente responder apenas com seus conhecimentos. Após terminar de responder, anote as dificuldades que enfrentou para responder e os conhecimentos que porventura tenha adquirido e coloque junto com suas respostas.
+    NOTA: A intenção do teste nao é ter respostas certas, pois existem diferentes 
+    formas de se responder corretamente. Antes de efetuar qualquer pesquisa tente 
+    responder apenas com seus conhecimentos. Após terminar de responder, anote as 
+    dificuldades que enfrentou para responder e os conhecimentos que porventura 
+    tenha adquirido e coloque junto com suas respostas.
 
-1.) Qual o valor que você definiria para ***m***. Explique.
+1.) Qual o valor de ***m***.
+
+2.) Quantas posições cada cartela terá?
 
 2.) Descreva um algoritmo para gerar as cartelas. Voce pode utilizar suas proprias palavras ou pseudo-código.
 
@@ -30,5 +40,15 @@ Com base nas premissas acima responda os questionamentos abaixo.
 5.) Que tipos de problemas você acredita que poderiam surgir na implementação desta solução?
 
 
-
+    DICAS:
+    - Para definir o deslocamento máximo aleatório devemos imaginar que cada coluna terá um grupo
+    de números a serem sorteados. Se tivessemos bolas de 1 a 90 e quisessemos divir aleatoriamente 
+    mas de forma uniforme os numeros em 5 linha de 5 numeros com o centro vazio (total de 24 posições), 
+    a primeira coluna teria numeros de **1** a **m**, a segunda de **2.m + 1** a **2.m + k** e assim por 
+    diante até que a ultima coluna teria numeros de **m.n + 1** a **90**.
+    - **m** é definido usando a formula **m = x/n** onde **x** é a quantidade de bolinhas e **n** é o 
+    numero de colunas, portanto para o atual exemplo **m = 18**.
+    - A primeira coluna de uma cartela desse nosso BINGO terá numeros de **1** a **18**.
+    - A ultima coluna (quinta) terá os numeros **f(4) = (18.4) + k**.
+    - Para qualquer coluna do exemplo, o menor valor de **k** será **1** e o maior valor de **k** será igual a **m** (pois **k** pertence a **[1, m]**).   
 
