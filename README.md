@@ -1,5 +1,6 @@
+
 # Teste-Bingo #
-Teste de conhecimento e capacidade logica para avaliação de candidatos a desenvolvedor
+### Teste de conhecimento e capacidade logica para avaliação de candidatos a desenvolvedor ###
 
 Este é um teste de avaliação de capacidade de solução de problemas e conhecimento sobre algoritmos.
 
@@ -52,3 +53,6 @@ Com base nas premissas acima responda os questionamentos abaixo.
 - A ultima coluna (quinta) terá os numeros **f(4) = (18.4) + k**.
 - Para qualquer coluna do exemplo, o menor valor de **k** será **1** e o maior valor de **k** será igual a **m** (pois **k** pertence a **[1, m]**).   
 
+## O que devo fazer agora? ##
+
+Bom, agora que já tem tudo resolvido, envie suas respostas, juntamente com uma versão atualizada de seu Curriculo Vitae contendo telefone para contato e pretensão salarial para tecnologia@address.com.br
