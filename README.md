@@ -55,4 +55,4 @@ Com base nas premissas acima responda os questionamentos abaixo.
 
 ## O que devo fazer agora? ##
 
-Bom, agora que já tem tudo resolvido, envie suas respostas, juntamente com uma versão atualizada de seu Curriculo Vitae contendo telefone para contato e pretensão salarial para tecnologia@address.com.br
+Bom, agora que já tem tudo resolvido, envie suas respostas, juntamente com uma versão atualizada de seu Curriculo Vitae contendo telefone para contato e pretensão salarial para marcos.regis@address.com.br
